@@ -12,6 +12,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="ambience-popup" id="ambiencePopup" hidden role="dialog" aria-modal="true" aria-labelledby="ambienceTitle" aria-describedby="ambienceDesc">
+    <div class="ambience-card">
+      <div class="ambience-symbol">✦</div>
+      <p class="ambience-kicker">S.S.E.R.C. · MISSION CONTROL</p>
+      <h2 id="ambienceTitle">Welcome, Explorer</h2>
+      <p id="ambienceDesc">Would you like to experience the mission ambience?</p>
+      <button class="ambience-play" id="ambiencePlay" type="button">▶ PLAY AMBIENCE</button>
+      <button class="ambience-silent" id="ambienceSilent" type="button">Enter without sound</button>
+    </div>
+  </div>
+  <button class="ambience-toggle" id="ambienceToggle" type="button" hidden aria-pressed="false">♫ Play ambience</button>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="S.S.E.R.C. home">
       <span class="brand-mark"><img src="assets/sserc-logo.png" alt="S.S.E.R.C. logo"></span>
@@ -63,5 +74,6 @@
   </main>
   <footer class="footer"><div class="footer-brand"><span class="mini-mark">★</span><strong>S.S.E.R.C.</strong><small></small></div><div class="footer-tagline" data-nl="VAN SURINAME. NAAR DE STERREN." data-en="FROM SURINAME. TO THE STARS.">VAN SURINAME. NAAR DE STERREN.</div><div class="footer-bottom"><span>© <span id="year"></span> S.S.E.R.C.</span><span data-nl="Fictief ruimtevaartconcept · Modelling-project" data-en="Fictional space concept · Modelling project">Fictief ruimtevaartconcept · Modelling-project</span></div></footer>
   <script src="script.js"></script>
+  <script src="ambience.js"></script>
 </body>
 </html>

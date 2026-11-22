@@ -3,3 +3,18 @@
 @media(max-width:1000px){.role-grid{grid-template-columns:repeat(2,1fr)}.nav{gap:18px}.brand{min-width:auto}.mission-grid{gap:30px}}
 @media(max-width:720px){.topbar{height:75px;padding:9px 14px}.brand-mark{width:48px;height:48px}.brand-copy strong{font-size:20px;letter-spacing:3px}.brand-copy small{font-size:7px;letter-spacing:1px}.nav{display:none;position:absolute;left:0;right:0;top:75px;background:#07142d;padding:18px 24px 25px;flex-direction:column;gap:18px;border-bottom:1px solid #233a59}.nav.open{display:flex}.nav a{font-size:14px}.nav-apply{display:none}.menu-toggle{display:block}.hero{min-height:650px;padding:70px 22px 85px;align-items:flex-end}.hero-image{background-position:58% center}.hero-shade{background:linear-gradient(0deg,rgba(4,11,26,.98),rgba(4,11,26,.7) 55%,rgba(4,11,26,.1))}.hero-content{max-width:100%}h1{font-size:clamp(48px,14vw,74px)}.hero-content>p{font-size:14px}.hero-side-label{display:none}.section-wrap{padding:65px 20px}.mission-grid{grid-template-columns:1fr;gap:15px}.mission h2,.roles h2,.apply-band h2{font-size:clamp(43px,12vw,62px)}.mission-copy p{font-size:13px}.roles-heading{display:block;margin:24px 0 28px}.roles-heading p{margin-top:18px}.role-grid{grid-template-columns:1fr;gap:12px}.role-card{min-height:220px;padding:22px}.role-card h3{font-size:27px}.apply-band{padding:65px 22px}.whatsapp-cta{width:100%;justify-content:center;padding:16px}.footer-bottom{flex-direction:column}.footer-tagline{font-size:9px;letter-spacing:2px;margin:28px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.role-card{transition:none}}
+
+/* Ambient music prompt + player controls */
+.ambience-popup[hidden], .ambience-toggle[hidden] { display:none !important; }
+.ambience-popup { position:fixed; inset:0; z-index:1000; display:flex; align-items:center; justify-content:center; padding:22px; background:rgba(2,7,18,.84); backdrop-filter:blur(7px); }
+.ambience-card { width:min(100%,420px); text-align:center; padding:36px 28px 30px; background:linear-gradient(150deg,#102342,#07142d 70%); border:1px solid rgba(233,173,24,.6); border-radius:16px; box-shadow:0 24px 80px #0009; }
+.ambience-symbol { font-size:32px; color:var(--gold); margin-bottom:4px; }
+.ambience-kicker { color:#9fb3ca; font-size:10px; letter-spacing:3px; margin:0 0 12px; }
+.ambience-card h2 { font-size:38px; margin:0 0 10px; color:#f4f7fc; }
+.ambience-card p:not(.ambience-kicker) { color:#c5d1e1; font-size:13px; margin:0 0 24px; }
+.ambience-play { display:block; width:100%; border:0; border-radius:6px; padding:15px 18px; background:var(--gold); color:#07142d; font-weight:800; letter-spacing:1.2px; font-size:12px; cursor:pointer; }
+.ambience-play:hover { filter:brightness(1.08); }
+.ambience-silent { margin-top:15px; background:transparent; color:#b8c6d9; border:0; padding:10px; font-size:11px; cursor:pointer; }
+.ambience-toggle { position:fixed; right:18px; bottom:18px; z-index:50; border:1px solid rgba(233,173,24,.65); border-radius:30px; padding:11px 16px; background:#08162fef; color:#eaf0f8; font:600 11px var(--font); cursor:pointer; box-shadow:0 8px 24px #0005; }
+.ambience-toggle:hover { border-color:var(--gold); color:var(--gold); }
+@media(max-width:480px) { .ambience-card { padding:30px 22px 24px; } .ambience-card h2 { font-size:34px; } .ambience-toggle { right:12px; bottom:12px; } }
