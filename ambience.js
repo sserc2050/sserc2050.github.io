@@ -1,5 +1,5 @@
 (() => {
-  const tracks = ['assets/music/1.mp3', 'assets/music/2.mp3', 'assets/music/3.mp3', 'assets/music/4.mp3'];
+  const tracks = ['assets/music/2.mp3', 'assets/music/3.mp3', 'assets/music/4.mp3'];
   const audio = new Audio();
   audio.preload = 'auto';
   audio.volume = 0.35;
